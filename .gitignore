@@ -1,0 +1,5 @@
+node_modules
+Backend/node_modules
+Spotify/node_modules
+Backend/.env
+dist
