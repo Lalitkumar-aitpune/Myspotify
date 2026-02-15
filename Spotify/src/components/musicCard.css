@@ -1,0 +1,71 @@
+.music-card {
+  background: #181818;
+  padding: 16px;
+  border-radius: 10px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.music-card:hover {
+  background: #282828;
+  transform: translateY(-4px);
+}
+
+.music-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.music-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.music-artist {
+  margin: 0;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+/* Buttons wrapper */
+.music-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Common button style */
+.music-actions button {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+/* Play button */
+.play-btn {
+  background-color: #1db954;
+  color: white;
+}
+
+.play-btn:hover {
+  background-color: #17a74a;
+  transform: scale(1.03);
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #e53935;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+  transform: scale(1.03);
+}

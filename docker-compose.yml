@@ -1,0 +1,16 @@
+services:
+  backend:
+    build:
+      context: ./Backend
+    ports:
+      - "5001:5000"
+    env_file:
+      - ./Backend/.env
+
+  frontend:
+    build:
+      context: ./Spotify
+    ports:
+      - "3001:80"
+    depends_on:
+      - backend
